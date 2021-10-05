@@ -1,12 +1,11 @@
 {
-  "name": "task33",
+  "name": "task4",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-    "moment": "^2.29.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -35,9 +34,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-plugin-react": "^7.26.1"
   }
 }
