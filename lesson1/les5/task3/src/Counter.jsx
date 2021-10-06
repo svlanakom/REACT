@@ -32,7 +32,7 @@ class Counter extends React.Component {
         <button
           data-action="increase"
           className="counter__button"
-          onClick={() => this.increase}
+          onClick={this.increase}
         >
           +
         </button>
