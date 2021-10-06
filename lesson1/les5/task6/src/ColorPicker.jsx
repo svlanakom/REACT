@@ -11,24 +11,30 @@ class ColorPicker extends React.Component {
       currentColor: "",
     };
   }
-  handleHover = () => {
+  handleHover = (color) => {
     this.setState({
       currentColor: color,
     });
   };
-  HandleMouseLeave = () => {
+  handleMouseLeave = () => {
     this.setState({
       currentColor: "",
     });
-  };
+    };
+    
+    handleMouseLeave = () => {
+        this.state({
+            currentColor: "",
+        });
+    };
   render() {
     return (
       <div>
         <div className="picker__title">{this.state.currentColor}</div>
         <div>
           <button
-            onMouseEnter={() => this.handleHover}
-            onMouseLeave={this.HandleMouseLeave}
+            onMouseEnter={() => this.handleHover(coral)}
+            onMouseLeave={this.handleMouseLeave}
             className="picker__button picker__button_coral"
           ></button>
           <button
@@ -47,3 +53,5 @@ class ColorPicker extends React.Component {
   }
 }
 export default ColorPicker;
+
+
