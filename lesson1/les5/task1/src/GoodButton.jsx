@@ -3,7 +3,8 @@ import React from "react";
 
 const GoodButton = () => {
     return (
-        <button onClick={() => {
+        <button
+            onClick={() => {
             alert("Good Job!");
         }}
             className="fancy-button"
