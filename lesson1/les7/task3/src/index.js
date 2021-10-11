@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
-import TransactionList from "./TransactionList.jsx";
+import TransactionsList from "./TransactionsList.jsx";
 
 const transactions = [
   {
@@ -31,6 +31,6 @@ const transactions = [
 ];
 
 ReactDOM.render(
-  <TransactionList transactions={transactions} />,
+  <TransactionsList transactions={transactions} />,
   document.getElementById("root")
 );
