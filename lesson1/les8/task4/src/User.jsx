@@ -13,7 +13,9 @@ class User extends React.Component {
     fetch(`https://api.github.com/users/${userId}`)
       .then((response) => response.json())
       .then((data) => {
-        this.setState({ user: data });
+        this.setState({
+          user: data
+        });
       });
   };
 
@@ -25,8 +27,8 @@ class User extends React.Component {
     const { avatar_url, location, name } = user;
     return (
       <div className="user">
-        <img src={avatar_url} alt="User Avatar" className="user-avatar" />
-        <div className="user-info">
+        <img src={avatar_url} alt="User Avatar" className="user__avatar" />
+        <div className="user__info">
           <span className="user__name">{name}</span>
           <span className="user__location">{location}</span>
         </div>
