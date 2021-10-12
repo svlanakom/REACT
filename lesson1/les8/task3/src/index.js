@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles.scss";
-import Dimension from "./Dimension.jsx";
+import Dimensions from "./Dimensions.jsx";
 
-ReactDOM.render(<Dimension />, document.getElementById("root"));
+ReactDOM.render(<Dimensions />, document.getElementById("root"));
