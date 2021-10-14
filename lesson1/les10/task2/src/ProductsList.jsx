@@ -18,8 +18,7 @@ const ProductsList = ({ cartItems }) => {
         ))}
       </ul>
           <div className="products__total">
-              {`Total: $${total}`
-              }</div>
+              {`Total: $${total}`}</div>
     </div>
   );
 };
