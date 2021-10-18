@@ -1,6 +1,13 @@
-import React from "react";
+import React from 'react';
 
-class Numbers extends React.Component {
+class Numbers extends React.PureComponent {
+  //   shouldComponentUpdate(nextProps) {
+  //     if (this.props.number === nextProps.number && this.props.title === nextProps.title) {
+  //       return false;
+  //     }
+  //     return true;
+  //   }
+
   render() {
     return (
       <div className="number">
