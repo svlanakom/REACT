@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://cdn.pixabay.com/photo/2017/03/15/13/27/rough-horn-2146181_960_720.jpg");
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.time-left {
+  color: black;
+  border-radius: 12px;
+  padding: 10px;
+  font-weight: 700;
+}
+.timer__value {
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  background-color: #b2b2b26e;
+  color: black;
+  border-radius: 12px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px #fff;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
