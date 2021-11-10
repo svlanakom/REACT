@@ -1,11 +1,11 @@
 import React from "react";
 import { Provider } from "react-redux";
-import Counter from "./components/Counter.jsx";
 import store from "./store";
+import Weather from "./weather/Weather";
 
 const App = () => (
   <Provider store={store}>
-    <Counter />
+    <Weather />
   </Provider>
 );
 
