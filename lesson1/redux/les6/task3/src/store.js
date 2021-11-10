@@ -1,20 +1,12 @@
 import { createStore, applyMiddleware, compose } from "redux";
-import counterReducer from "./counter.reducer";
 
-const logger = (store) => (next) => (action) => {
-  console.group(action.type);
-  console.info(action);
-  const result = next(action);
-  console.log("new state", store.getState());
-  console.groupEnd();
-  return result;
-};
+import thunk from "redux-thunk";
+import weatherReducer from "./weather/weather.reducer";
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION__ || compose;
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const store = createStore(
-  counterReducer,
-  composeEnhancers(applyMiddleware(logger))
-);
+const enhancer = composeEnhancers(applyMiddleware(thunk));
+
+const store = createStore(weatherReducer, enhancer);
 
 export default store;
